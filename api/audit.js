@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const TO_EMAIL = process.env.CONTACT_EMAIL || 'contact.studionorthcreative@gmail.com';
-const FROM_EMAIL = process.env.FROM_EMAIL || 'StudioNorth <noreply@studionorth.co>';
+const FROM_EMAIL = process.env.FROM_EMAIL || 'StudioNorth <onboarding@resend.dev>';
 
 export default async function handler(req, res) {
   if (req.method === 'OPTIONS') {
