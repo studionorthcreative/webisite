@@ -282,6 +282,9 @@
           })
           .then(function (result) {
             if (result.ok) {
+              if (result.body && result.body.audit) {
+                sessionStorage.setItem('auditResult', JSON.stringify(result.body.audit));
+              }
               window.location.href = '/audit-results';
             } else {
               errorMsg.textContent = result.body.details || 'Something went wrong. Please try again.';

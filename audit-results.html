@@ -373,9 +373,9 @@
           </div>
           <div class="report-header-body">
             <div>
-              <h1 class="report-site-name">example-business.com</h1>
-              <p class="report-meta">March 2026 · Prepared by Studio North</p>
-              <div class="report-summary">
+              <h1 class="report-site-name" id="r-site-name">example-business.com</h1>
+              <p class="report-meta" id="r-meta">March 2026 · Prepared by Studio North</p>
+              <div class="report-summary" id="r-summary">
                 <span>6 categories analyzed</span>
                 <span class="report-summary-dot">·</span>
                 <span>5 priority fixes identified</span>
@@ -384,9 +384,9 @@
               </div>
             </div>
             <div class="report-score-block">
-              <span class="report-score-number score-amber">61</span>
+              <span class="report-score-number score-amber" id="r-score-number">61</span>
               <span class="report-score-out-of">out of 100</span>
-              <span class="score-badge score-badge-amber">Needs Work</span>
+              <span class="score-badge score-badge-amber" id="r-score-badge">Needs Work</span>
             </div>
           </div>
         </div>
@@ -394,13 +394,13 @@
         <!-- Studio North nudge -->
         <div class="nudge-card">
           <p class="nudge-label">Studio North</p>
-          <p class="nudge-body">A score of 61 means the site is functional but leaving real opportunity on the table. Every issue in this report is something we address in a website rebuild. If you want to talk through what we found, there is no cost to that conversation.</p>
-          <a href="/#contact" class="nudge-link">Talk to Studio North →</a>
+          <p class="nudge-body" id="r-nudge-body">A score of 61 means the site is functional but leaving real opportunity on the table. Every issue in this report is something we address in a website rebuild. If you want to talk through what we found, there is no cost to that conversation.</p>
+          <a href="https://calendly.com/studionorthcreative/30min" class="nudge-link" target="_blank" rel="noopener noreferrer">Talk to Studio North →</a>
         </div>
 
         <!-- Category scores -->
         <p class="results-section-heading">Category Scores</p>
-        <div class="scores-grid">
+        <div class="scores-grid" id="r-scores-grid">
 
           <div class="report-card-section">
             <div class="score-row">
@@ -457,7 +457,7 @@
 
           <div class="report-card-section">
             <p class="results-section-heading">Top Issues</p>
-            <ul class="issue-list">
+            <ul class="issue-list" id="r-issues-list">
               <li class="issue-item"><span class="issue-icon">✕</span>No clear value proposition visible above the fold.</li>
               <li class="issue-item"><span class="issue-icon">✕</span>Mobile page load time is 6.2 seconds, well above the 3-second benchmark.</li>
               <li class="issue-item"><span class="issue-icon">✕</span>Missing meta descriptions on 4 key pages.</li>
@@ -468,7 +468,7 @@
 
           <div class="report-card-section">
             <p class="results-section-heading">What Is Working</p>
-            <ul class="working-list">
+            <ul class="working-list" id="r-working-list">
               <li class="working-item"><span class="working-icon">✓</span>Clean, professional visual design.</li>
               <li class="working-item"><span class="working-icon">✓</span>SSL certificate is active and the site is secure.</li>
               <li class="working-item"><span class="working-icon">✓</span>Mobile-responsive layout across pages.</li>
@@ -480,7 +480,7 @@
 
         <!-- Priority fixes -->
         <p class="results-section-heading">Priority Fixes</p>
-        <div class="fixes-list">
+        <div class="fixes-list" id="r-fixes-list">
 
           <div class="fix-card">
             <span class="fix-number">01</span>
@@ -518,7 +518,7 @@
         <div class="results-cta">
           <h2 class="results-cta-headline">These fixes don't have to wait.</h2>
           <p class="results-cta-desc">Studio North builds websites for businesses that are ready to fix what is holding them back. If the report felt familiar, it is worth a conversation.</p>
-          <a href="/#contact" class="btn btn-light">Start a Project &rarr;</a>
+          <a href="https://calendly.com/studionorthcreative/30min" class="btn btn-light" target="_blank" rel="noopener noreferrer">Book a Free Strategy Call &rarr;</a>
         </div>
 
       </div>
@@ -578,6 +578,139 @@
           document.body.style.overflow = '';
         });
       });
+
+      // ── Audit result binding ──────────────────────────────────────────────
+      var raw = sessionStorage.getItem('auditResult');
+      if (!raw) return; // no data — static sample content remains visible
+
+      var audit;
+      try { audit = JSON.parse(raw); } catch (e) { return; }
+      if (!audit) return;
+
+      function scoreColorClass(s) {
+        if (s >= 70) return 'score-green';
+        if (s >= 50) return 'score-amber';
+        return 'score-red';
+      }
+      function fillColorClass(s) {
+        if (s >= 70) return 'fill-green';
+        if (s >= 50) return 'fill-amber';
+        return 'fill-red';
+      }
+      function badgeClass(s) {
+        if (s >= 70) return 'score-badge-green';
+        if (s >= 50) return 'score-badge-amber';
+        return 'score-badge-red';
+      }
+      function scoreLabel(s) {
+        if (s >= 80) return 'Strong';
+        if (s >= 65) return 'Acceptable';
+        if (s >= 50) return 'Needs Work';
+        return 'Needs Attention';
+      }
+      function priorityToImpact(p) {
+        if (p === 'critical' || p === 'high') return 'High';
+        if (p === 'medium') return 'Medium';
+        return 'Low';
+      }
+      function formatDate(iso) {
+        var d = new Date(iso);
+        return d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+      }
+      function esc(str) {
+        if (!str) return '';
+        return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      }
+
+      var score = audit.overallScore != null ? audit.overallScore : 0;
+      var displayUrl = audit.url.replace(/^https?:\/\//, '');
+      var fixCount = audit.priorityFixes ? audit.priorityFixes.length : 0;
+      var strengthCount = audit.strengths ? audit.strengths.length : 0;
+
+      // Header
+      document.getElementById('r-site-name').textContent = displayUrl;
+      document.getElementById('r-meta').textContent = formatDate(audit.auditedAt) + ' · Prepared by Studio North';
+      document.getElementById('r-summary').innerHTML =
+        '<span>6 categories analyzed</span>' +
+        '<span class="report-summary-dot">·</span>' +
+        '<span>' + fixCount + ' priority fix' + (fixCount === 1 ? '' : 'es') + ' identified</span>' +
+        '<span class="report-summary-dot">·</span>' +
+        '<span>' + strengthCount + ' strength' + (strengthCount === 1 ? '' : 's') + ' noted</span>';
+
+      // Score block
+      var scoreEl = document.getElementById('r-score-number');
+      scoreEl.textContent = score;
+      scoreEl.className = 'report-score-number ' + scoreColorClass(score);
+      var badgeEl = document.getElementById('r-score-badge');
+      badgeEl.textContent = scoreLabel(score);
+      badgeEl.className = 'score-badge ' + badgeClass(score);
+
+      // Nudge
+      var nudgeText = 'A score of ' + score + ' means ';
+      if (score >= 80)      nudgeText += 'the site is performing well, but there are still opportunities to improve conversion and discoverability.';
+      else if (score >= 65) nudgeText += 'the site is functional and solid in several areas, but there are clear gaps worth addressing.';
+      else if (score >= 50) nudgeText += 'the site is functional but leaving real opportunity on the table.';
+      else                  nudgeText += 'the site has significant issues that are likely costing you customers.';
+      nudgeText += ' Every issue in this report is something we address in a website rebuild. If you want to talk through what we found, there is no cost to that conversation.';
+      document.getElementById('r-nudge-body').textContent = nudgeText;
+
+      // Category scores grid
+      var CATEGORY_ORDER = ['seo', 'performance', 'content', 'ux', 'conversion', 'technical'];
+      var cats = audit.categories;
+      if (cats) {
+        var gridHTML = '';
+        CATEGORY_ORDER.forEach(function (key) {
+          var cat = cats[key];
+          if (!cat) return;
+          var s = cat.score != null ? cat.score : null;
+          var numHTML = s != null ? '<span class="score-row-num ' + scoreColorClass(s) + '">' + s + '</span>' : '<span class="score-row-num" style="color:#9CA3AF;">—</span>';
+          var barHTML = s != null ? '<div class="progress-fill ' + fillColorClass(s) + '" style="width:' + s + '%"></div>' : '';
+          gridHTML += '<div class="report-card-section">' +
+            '<div class="score-row"><span class="score-row-name">' + esc(cat.label) + '</span>' + numHTML + '</div>' +
+            '<div class="progress-track">' + barHTML + '</div>' +
+            '</div>';
+        });
+        document.getElementById('r-scores-grid').innerHTML = gridHTML;
+      }
+
+      // Top issues
+      var issuesEl = document.getElementById('r-issues-list');
+      if (audit.topIssues && audit.topIssues.length > 0) {
+        issuesEl.innerHTML = audit.topIssues.map(function (issue) {
+          return '<li class="issue-item"><span class="issue-icon">✕</span>' + esc(issue.detail || issue.label) + '</li>';
+        }).join('');
+      } else {
+        issuesEl.innerHTML = '<li class="issue-item" style="color:#9CA3AF;">No significant issues found.</li>';
+      }
+
+      // What is working
+      var workingEl = document.getElementById('r-working-list');
+      if (audit.strengths && audit.strengths.length > 0) {
+        workingEl.innerHTML = audit.strengths.map(function (item) {
+          var text = item.label + (item.detail ? ': ' + item.detail : '');
+          return '<li class="working-item"><span class="working-icon">✓</span>' + esc(text) + '</li>';
+        }).join('');
+      } else {
+        workingEl.innerHTML = '<li class="working-item" style="color:#9CA3AF;">No full-score items found.</li>';
+      }
+
+      // Priority fixes
+      var fixesEl = document.getElementById('r-fixes-list');
+      if (audit.priorityFixes && audit.priorityFixes.length > 0) {
+        fixesEl.innerHTML = audit.priorityFixes.map(function (item, i) {
+          var num = String(i + 1).padStart(2, '0');
+          var impact = priorityToImpact(item.priority);
+          var badgeCls = impact === 'High' ? 'fix-badge-high' : 'fix-badge-medium';
+          return '<div class="fix-card">' +
+            '<span class="fix-number">' + num + '</span>' +
+            '<p class="fix-text">' + esc(item.fix) + '</p>' +
+            '<span class="fix-badge ' + badgeCls + '">' + impact + '</span>' +
+            '</div>';
+        }).join('');
+      } else {
+        fixesEl.innerHTML = '<p style="font-size:14px;color:#9CA3AF;">No priority fixes identified.</p>';
+      }
+
     })();
   </script>
 
