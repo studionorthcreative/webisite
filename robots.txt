@@ -1,4 +1,5 @@
 # StudioNorth — robots.txt
+# deploy-test
 User-agent: *
 Allow: /
 Disallow: /admin/
