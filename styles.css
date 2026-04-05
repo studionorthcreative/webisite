@@ -542,6 +542,23 @@ ul {
   color: rgba(27, 42, 74, 0.3);
 }
 
+.work-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform var(--duration-slow) var(--ease);
+}
+
+.work-card-large .work-img {
+  aspect-ratio: 16/10;
+}
+
+.work-card:hover .work-img {
+  transform: scale(1.03);
+}
+
 .work-info {
   padding: var(--gap-xs) 0;
 }
@@ -550,7 +567,7 @@ ul {
   font-family: var(--font-serif);
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .work-tag {
@@ -833,6 +850,15 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(27, 42, 74, 0.3);
+}
+
+.about-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+  display: block;
 }
 
 .about-body {
@@ -1291,6 +1317,10 @@ ul {
   }
 
   .about-placeholder {
+    aspect-ratio: 4/3;
+  }
+
+  .about-img {
     aspect-ratio: 4/3;
   }
 

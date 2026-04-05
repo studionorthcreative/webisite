@@ -32,7 +32,7 @@
     .page-hero-inner { position: relative; z-index: 1; }
     .page-hero-headline {
       font-family: var(--font-serif);
-      font-size: clamp(52px, 7.5vw, 96px);
+      font-size: clamp(44px, 6vw, 72px);
       font-weight: 500;
       line-height: 1.0;
       color: var(--ink-deep);
@@ -50,7 +50,7 @@
       font-size: 14px;
       line-height: 1.6;
       color: var(--neutral-600);
-      margin-top: 8px;
+      margin-top: 12px;
       max-width: 360px;
     }
     .work {
@@ -58,6 +58,10 @@
     }
     .work .work-grid {
       margin-top: 0;
+      gap: var(--gap-lg);
+    }
+    .work .work-info {
+      padding: 14px 0;
     }
   </style>
 </head>
@@ -104,7 +108,10 @@
         <div class="page-hero-inner reveal">
           <p class="section-label">Our Work</p>
           <h1 class="page-hero-headline">The Work.</h1>
-          <p class="page-hero-sub">A focused collection of brand, web, and product work.</p>
+          <p class="page-hero-sub">Brand, web, and product work for businesses ready to look as intentional as they operate.</p>
+          <div style="margin-top:var(--gap-lg);">
+            <button type="button" class="btn btn-primary open-contact-modal">Start a Project</button>
+          </div>
         </div>
       </div>
     </section>
@@ -115,78 +122,66 @@
 
           <a href="#" class="work-card work-card-large reveal">
             <div class="work-image">
-              <div class="work-placeholder" style="background-color: #D8D0C4;">
-                <span>Brand + Web</span>
-              </div>
+              <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1600&q=80" alt="Brand strategy notebook and pen on a wooden desk" class="work-img" loading="lazy">
             </div>
             <div class="work-info">
-              <h2 class="work-title">Meridian Wellness</h2>
               <span class="work-tag">Wellness &middot; Brand + Web</span>
+              <h2 class="work-title">Meridian Wellness</h2>
               <p class="work-desc">A full brand and website build for a holistic wellness practice ready to move past the generic health aesthetic.</p>
             </div>
           </a>
 
           <a href="#" class="work-card reveal">
             <div class="work-image">
-              <div class="work-placeholder" style="background-color: #C4CDD8;">
-                <span>Website</span>
-              </div>
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="A light-filled minimal studio interior with modern Scandinavian furnishings" class="work-img" loading="lazy">
             </div>
             <div class="work-info">
-              <h2 class="work-title">Harlow Interiors</h2>
               <span class="work-tag">Interior Design &middot; Website</span>
+              <h2 class="work-title">Harlow Interiors</h2>
               <p class="work-desc">A bespoke website for a high-end residential studio built to attract the right kind of client from the first click.</p>
             </div>
           </a>
 
           <a href="#" class="work-card reveal">
             <div class="work-image">
-              <div class="work-placeholder" style="background-color: #D0C4D8;">
-                <span>Full Rebrand</span>
-              </div>
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80" alt="Editorial black and white gym interior" class="work-img" loading="lazy">
             </div>
             <div class="work-info">
-              <h2 class="work-title">Forma Studio</h2>
               <span class="work-tag">Fitness &middot; Brand + Web + Product</span>
+              <h2 class="work-title">Forma Studio</h2>
               <p class="work-desc">A complete overhaul across identity, digital presence, and branded merchandise for a boutique fitness studio.</p>
             </div>
           </a>
 
           <a href="#" class="work-card work-card-large reveal">
             <div class="work-image">
-              <div class="work-placeholder" style="background-color: #C8D4C4;">
-                <span>Brand + Product</span>
-              </div>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1600&q=80" alt="A clean minimal premium product photograph on a white surface" class="work-img" loading="lazy">
             </div>
             <div class="work-info">
-              <h2 class="work-title">Sable &amp; Co</h2>
               <span class="work-tag">E-Commerce &middot; Brand + Product</span>
+              <h2 class="work-title">Sable &amp; Co</h2>
               <p class="work-desc">Brand identity and custom product sourcing for a premium lifestyle brand launching across retail and direct-to-consumer.</p>
             </div>
           </a>
 
           <a href="#" class="work-card reveal">
             <div class="work-image">
-              <div class="work-placeholder" style="background-color: #C8C4BC;">
-                <span>Brand + Web</span>
-              </div>
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80" alt="Three lattes on a wooden café table with greenery in the background" class="work-img" loading="lazy">
             </div>
             <div class="work-info">
-              <h2 class="work-title">Vessel Coffee</h2>
               <span class="work-tag">Hospitality &middot; Brand + Web</span>
+              <h2 class="work-title">Vessel Coffee</h2>
               <p class="work-desc">A café and roastery brand built to feel as considered as the coffee it serves.</p>
             </div>
           </a>
 
           <a href="#" class="work-card reveal">
             <div class="work-image">
-              <div class="work-placeholder" style="background-color: #D4CAC0;">
-                <span>Brand Identity</span>
-              </div>
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1200&q=80" alt="A minimal skincare tube on white linen fabric" class="work-img" loading="lazy">
             </div>
             <div class="work-info">
-              <h2 class="work-title">Lune Apothecary</h2>
               <span class="work-tag">Beauty &middot; Brand Identity</span>
+              <h2 class="work-title">Lune Apothecary</h2>
               <p class="work-desc">A clean, considered identity for an independent apothecary navigating the space between beauty and wellness.</p>
             </div>
           </a>
@@ -195,11 +190,19 @@
       </div>
     </section>
 
+    <section style="padding: var(--section-md) 0; background: var(--surface-primary);">
+      <div class="container">
+        <div class="reveal" style="border-top: 1px solid var(--neutral-200); max-width: 720px; margin: 0 auto; padding-top: var(--gap-xl);">
+          <p style="font-family: var(--font-serif); font-size: clamp(22px, 2.5vw, 30px); font-weight: 500; color: var(--ink-deep); line-height: 1.35; letter-spacing: -0.01em;">Every project is a collaboration. We work with a small number of clients at a time to make sure the work gets the attention it deserves.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="final-cta">
       <div class="container-narrow">
         <div class="final-cta-content reveal">
           <h2 class="final-cta-headline">Ready to add yours?</h2>
-          <p class="final-cta-sub">Tell us about your project.</p>
+          <p class="final-cta-sub">Each project started with a conversation. Tell us about yours.</p>
           <button type="button" class="btn btn-primary btn-light open-contact-modal">Start a Project</button>
         </div>
       </div>
