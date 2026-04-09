@@ -86,7 +86,7 @@
       line-height: 1.55;
       color: var(--neutral-600);
       max-width: 480px;
-      margin-bottom: var(--gap-xl);
+      margin-bottom: var(--gap-lg);
     }
     .cs-meta {
       display: flex;
@@ -235,6 +235,8 @@
       line-height: 1.75;
       color: rgba(255,255,255,0.5);
       max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Outcome callouts */
@@ -243,10 +245,9 @@
       grid-template-columns: repeat(3, 1fr);
       gap: var(--gap-lg);
       margin-top: var(--gap-xl);
-      align-items: start;
     }
     .cs-outcome {
-      padding: var(--gap-lg) 0;
+      padding: var(--gap-lg) 0 var(--gap-lg);
       border-top: 2px solid var(--surface-deep);
       transition: border-color var(--duration-fast) var(--ease);
     }
@@ -340,6 +341,9 @@
       color: var(--neutral-600);
       margin-top: 6px;
       display: block;
+    }
+    .cs-next-text {
+      flex: 1;
     }
     .cs-next-arrow {
       font-size: 28px;
@@ -454,10 +458,10 @@
     <!-- ─── THE CLIENT ─── -->
     <section class="cs-section" style="background: var(--white);">
       <div class="container">
-        <div class="cs-section-narrow reveal">
+        <div class="reveal">
           <p class="section-label">The Client</p>
           <h2 class="cs-headline">A practice that had outgrown its brand.</h2>
-          <div class="cs-body">
+          <div class="cs-body" style="max-width: 640px;">
             <p>Meridian Wellness is a wellness practice built on the belief that good health is earned through intention, not accident. The team had spent years developing a reputation for careful, considered work with their clients. They were known by the people who had experienced what they did. The problem was what happened before that point.</p>
             <p>When a potential client encountered Meridian for the first time, online or otherwise, they were not meeting the practice at its best. They were meeting a brand that had not kept pace with the work. And a brand that does not reflect the quality of what it represents costs the business in every moment that matters.</p>
           </div>
@@ -468,10 +472,10 @@
     <!-- ─── THE PROBLEM ─── -->
     <section class="cs-section" style="background: var(--surface-light);">
       <div class="container">
-        <div class="cs-section-narrow reveal">
+        <div class="reveal">
           <p class="section-label">The Problem</p>
           <h2 class="cs-headline">A brand assembled in pieces.</h2>
-          <div class="cs-body">
+          <div class="cs-body" style="max-width: 640px;">
             <p>When a potential client encountered Meridian online, they were met with a visual identity that had been patched together over time. The logo from one era, the website from another, the print materials from a third. No single element was broken. But nothing worked together either.</p>
             <p>The brand communicated effort without communicating intention. For a practice built on trust, expertise, and a particular kind of attention, that incoherence was costing them in the moments that mattered most. The first impression should have done the qualifying. Instead it was raising questions the practice then had to answer in person.</p>
           </div>
@@ -482,10 +486,10 @@
     <!-- ─── DIRECTION ─── -->
     <section class="cs-section" style="background: var(--white);">
       <div class="container">
-        <div class="cs-section-narrow reveal">
+        <div class="reveal">
           <p class="section-label">Direction</p>
           <h2 class="cs-headline">Calm, considered, and built to hold together.</h2>
-          <div class="cs-body">
+          <div class="cs-body" style="max-width: 640px;">
             <p>The brief was to build a brand that communicates confidence without coldness. Meridian's work is human and precise, and the visual system needed to carry both of those qualities at once. Not clinical. Not soft. Something that felt like a practice that takes what it does seriously without making that feel inaccessible.</p>
             <p>We started from the mark and worked outward, making sure every decision in color, type, structure, and space was something the whole system could sustain. The goal was not to make Meridian look different. It was to make it finally look like itself.</p>
           </div>
@@ -591,7 +595,7 @@
           <div class="cs-next-image">
             <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="A light-filled minimal studio interior with modern Scandinavian furnishings" class="cs-next-img" loading="lazy">
           </div>
-          <div>
+          <div class="cs-next-text">
             <span class="cs-next-label">Next Project</span>
             <span class="cs-next-title">Harlow Interiors</span>
             <span class="cs-next-tag">Interior Design &middot; Website</span>
