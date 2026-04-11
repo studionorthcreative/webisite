@@ -307,7 +307,7 @@
 
     /* Next project */
     .cs-next {
-      padding: var(--section-md) 0;
+      padding: var(--gap-xl) 0;
       background: var(--surface-primary);
       border-top: 1px solid var(--surface-deep);
     }
@@ -318,6 +318,29 @@
       text-decoration: none;
       color: inherit;
     }
+    .cs-next-link:hover { opacity: 0.75; }
+    .cs-next-image {
+      width: 140px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      aspect-ratio: 3/2;
+    }
+    .cs-next-placeholder {
+      width: 100%;
+      height: 100%;
+      transition: transform var(--duration-slow) var(--ease);
+    }
+    .cs-next-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--duration-slow) var(--ease);
+    }
+    .cs-next-link:hover .cs-next-placeholder,
+    .cs-next-link:hover .cs-next-img { transform: scale(1.04); }
+    .cs-next-text { flex: 1; }
     .cs-next-label {
       font-size: 11px;
       font-weight: 500;
@@ -325,53 +348,34 @@
       letter-spacing: 0.12em;
       color: var(--neutral-600);
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .cs-next-title {
       font-family: var(--font-serif);
-      font-size: clamp(22px, 2.5vw, 34px);
+      font-size: clamp(20px, 2vw, 28px);
       font-weight: 500;
       color: var(--ink-deep);
       letter-spacing: -0.01em;
       line-height: 1.1;
+      display: block;
+      margin-bottom: 4px;
     }
     .cs-next-tag {
       font-size: 13px;
       color: var(--neutral-600);
-      margin-top: 6px;
       display: block;
     }
-    .cs-next-text {
-      flex: 1;
-    }
     .cs-next-arrow {
-      font-size: 28px;
+      font-size: 24px;
       color: var(--neutral-600);
       transition: transform var(--duration-fast) var(--ease), color var(--duration-fast) var(--ease);
       flex-shrink: 0;
-      margin-left: auto;
     }
     .cs-next-link:hover .cs-next-arrow {
       transform: translateX(6px);
       color: var(--ink-deep);
     }
-    .cs-next-image {
-      width: 200px;
-      aspect-ratio: 3/2;
-      border-radius: 6px;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    .cs-next-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform var(--duration-fast) var(--ease);
-    }
-    .cs-next-link:hover .cs-next-img {
-      transform: scale(1.04);
-    }
+    .cs-hero-logo-mobile { display: none; }
 
     /* Gradient placeholder panels */
     .cs-placeholder {
@@ -390,8 +394,8 @@
       .cs-work-visual { aspect-ratio: 4/3; }
       .cs-mockup-row { grid-template-columns: 1fr; }
       .cs-outcomes { grid-template-columns: 1fr; }
-      .cs-next-image { width: 100%; }
-      .cs-next-link { flex-direction: column; align-items: flex-start; gap: var(--gap-md); }
+      .cs-hero-logo-mobile { display: none; }
+      .cs-next-image { width: 100px; }
       .cs-section { padding: var(--section-md) 0; }
       .cs-work-text { padding-right: 0; }
       .cs-meta { gap: var(--gap-md); }
@@ -444,7 +448,12 @@
           <div class="cs-hero-content">
             <a href="/work/" class="cs-back"><span>&#8592;</span> Work</a>
             <p class="section-label">Case Study</p>
-            <h1 class="cs-hero-headline">Stanced</h1>
+            <div class="cs-hero-name-row">
+              <h1 class="cs-hero-headline">Stanced</h1>
+              <div class="cs-hero-logo-mobile">
+                <img src="/images/stanced-logo.png" alt="Stanced logo" style="width: 60px; height: auto; display: block; mix-blend-mode: multiply;">
+              </div>
+            </div>
             <p class="cs-hero-descriptor">A founder-led brand building project. Kazan Ukani came with the vision, the name, and the meaning behind the brand. Studio North helped build the structure around it across website design, content, branding, product development, and sourcing.</p>
             <div class="cs-meta">
               <div class="cs-meta-item">

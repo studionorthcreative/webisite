@@ -321,7 +321,7 @@
 
     /* Next project */
     .cs-next {
-      padding: var(--section-md) 0;
+      padding: var(--gap-xl) 0;
       background: var(--surface-primary);
       border-top: 1px solid var(--surface-deep);
     }
@@ -332,6 +332,29 @@
       text-decoration: none;
       color: inherit;
     }
+    .cs-next-link:hover { opacity: 0.75; }
+    .cs-next-image {
+      width: 140px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      aspect-ratio: 3/2;
+    }
+    .cs-next-placeholder {
+      width: 100%;
+      height: 100%;
+      transition: transform var(--duration-slow) var(--ease);
+    }
+    .cs-next-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--duration-slow) var(--ease);
+    }
+    .cs-next-link:hover .cs-next-placeholder,
+    .cs-next-link:hover .cs-next-img { transform: scale(1.04); }
+    .cs-next-text { flex: 1; }
     .cs-next-label {
       font-size: 11px;
       font-weight: 500;
@@ -339,53 +362,34 @@
       letter-spacing: 0.12em;
       color: var(--neutral-600);
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .cs-next-title {
       font-family: var(--font-serif);
-      font-size: clamp(22px, 2.5vw, 34px);
+      font-size: clamp(20px, 2vw, 28px);
       font-weight: 500;
       color: var(--ink-deep);
       letter-spacing: -0.01em;
       line-height: 1.1;
+      display: block;
+      margin-bottom: 4px;
     }
     .cs-next-tag {
       font-size: 13px;
       color: var(--neutral-600);
-      margin-top: 6px;
       display: block;
     }
-    .cs-next-text {
-      flex: 1;
-    }
     .cs-next-arrow {
-      font-size: 28px;
+      font-size: 24px;
       color: var(--neutral-600);
       transition: transform var(--duration-fast) var(--ease), color var(--duration-fast) var(--ease);
       flex-shrink: 0;
-      margin-left: auto;
     }
     .cs-next-link:hover .cs-next-arrow {
       transform: translateX(6px);
       color: var(--ink-deep);
     }
-    .cs-next-image {
-      width: 200px;
-      aspect-ratio: 3/2;
-      border-radius: 6px;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    .cs-next-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform var(--duration-fast) var(--ease);
-    }
-    .cs-next-link:hover .cs-next-img {
-      transform: scale(1.04);
-    }
+    .cs-hero-logo-mobile { display: none; }
 
     .cs-meta-link {
       text-decoration: underline;
@@ -412,8 +416,8 @@
       .cs-work-visual { aspect-ratio: 4/3; }
       .cs-mockup-row { grid-template-columns: 1fr; }
       .cs-outcomes { grid-template-columns: 1fr; }
-      .cs-next-image { width: 100%; }
-      .cs-next-link { flex-direction: column; align-items: flex-start; gap: var(--gap-md); }
+      .cs-hero-logo-mobile { display: none; }
+      .cs-next-image { width: 100px; }
       .cs-section { padding: var(--section-md) 0; }
       .cs-work-text { padding-right: 0; }
       .cs-meta { gap: var(--gap-md); }
@@ -466,7 +470,12 @@
           <div class="cs-hero-content">
             <a href="/work/" class="cs-back"><span>←</span> Work</a>
             <p class="section-label">Case Study</p>
-            <h1 class="cs-hero-headline">American Honey Creamery &amp; Coffee Co.</h1>
+            <div class="cs-hero-name-row">
+              <h1 class="cs-hero-headline">American Honey Creamery &amp; Coffee Co.</h1>
+              <div class="cs-hero-logo-mobile" style="background: var(--surface-primary); border-radius: 4px; overflow: hidden;">
+                <img src="/images/american-honey-logo.jpg" alt="American Honey Creamery and Coffee Co. logo" style="width: 60px; height: auto; display: block; mix-blend-mode: multiply;">
+              </div>
+            </div>
             <p class="cs-hero-descriptor">A multi-location creamery and coffee brand, rebuilt across website, brand direction, and packaging so the full customer experience holds together.</p>
             <div class="cs-meta">
               <div class="cs-meta-item">
@@ -669,11 +678,12 @@
       </div>
     </section>
 
-    <!-- ─── NEXT PROJECT (stub — update href when next case study is live) ─── -->
+    <!-- NEXT PROJECT -->
     <section class="cs-next">
       <div class="container">
         <a href="/work/magnitude5/" class="cs-next-link reveal" aria-label="Next project: Magnitude5">
-          <div class="cs-next-image" style="background: linear-gradient(150deg, #2D4A3A 0%, #1A2A3A 100%);">
+          <div class="cs-next-image">
+            <div class="cs-next-placeholder" style="background: linear-gradient(150deg, #2D4A3A 0%, #1A2A3A 100%);"></div>
           </div>
           <div class="cs-next-text">
             <span class="cs-next-label">Next Project</span>
