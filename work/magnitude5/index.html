@@ -208,6 +208,20 @@
       position: relative;
       z-index: 1;
     }
+    /* Client grid */
+    .cs-client-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gap-xl);
+      align-items: center;
+    }
+    .cs-client-visual {
+      aspect-ratio: 4/5;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
     /* Mockup row */
     .cs-mockup-row {
       display: grid;
@@ -414,6 +428,8 @@
       .cs-work-grid { grid-template-columns: 1fr; }
       .cs-work-visual { aspect-ratio: 4/3; }
       .cs-mockup-row { grid-template-columns: 1fr; }
+      .cs-client-grid { grid-template-columns: 1fr; }
+      .cs-client-visual { display: none; }
       .cs-outcomes { grid-template-columns: 1fr; }
       .cs-hero-logo-mobile { display: none; }
       .cs-hero-logo-col { display: none; }
@@ -506,18 +522,18 @@
     <!-- ─── THE CLIENT ─── -->
     <section class="cs-section" style="background: var(--white);">
       <div class="container">
-        <div class="reveal">
-          <p class="section-label">The Client</p>
-          <h2 class="cs-headline">A coach with eight years of work and a community that was already paying attention.</h2>
-          <div class="cs-body" style="max-width: 640px;">
-            <p>Dani Ferreira has been coaching for eight years. Her background spans psychology, health science, strength training, corrective exercise, Pilates, yoga, and gut health. Her own experience with eating disorder recovery and competitive athletics shaped a coaching philosophy that credentials alone cannot produce. Structure that supports rather than restricts. Accountability that builds confidence rather than pressure. Movement that people want to keep doing.</p>
-            <p>Magnitude5 is the community that philosophy became. Built around five pillars covering the full picture of health: physical, mental, emotional, spiritual, and intellectual. Training guides, a wellness journal, custom programming, and a growing presence across Instagram, TikTok, and YouTube. The brand was already real. The platform was not.</p>
+        <div class="cs-client-grid reveal">
+          <div class="cs-client-text">
+            <p class="section-label">The Client</p>
+            <h2 class="cs-headline">A coach with eight years of work and a community that was already paying attention.</h2>
+            <div class="cs-body">
+              <p>Dani Ferreira has been coaching for eight years. Her background spans psychology, health science, strength training, corrective exercise, Pilates, yoga, and gut health. Her own experience with eating disorder recovery and competitive athletics shaped a coaching philosophy that credentials alone cannot produce. Structure that supports rather than restricts. Accountability that builds confidence rather than pressure. Movement that people want to keep doing.</p>
+              <p>Magnitude5 is the community that philosophy became. Built around five pillars covering the full picture of health: physical, mental, emotional, spiritual, and intellectual. Training guides, a wellness journal, custom programming, and a growing presence across Instagram, TikTok, and YouTube. The brand was already real. The platform was not.</p>
+            </div>
           </div>
-        </div>
-        <div class="cs-placeholder reveal">
-          <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #7A9A7A 0%, #3A5A3A 100%);"></div>
-          <div style="position: absolute; left: var(--gap-lg); right: var(--gap-lg); top: 40%; height: 1px; background: rgba(255,255,255,0.1);"></div>
-          <span style="position: absolute; bottom: var(--gap-lg); left: var(--gap-lg); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.25);">Magnitude5</span>
+          <div class="cs-client-visual">
+            <img src="/images/magnitude5-client-portrait.jpg" alt="Dani Ferreira, founder of Magnitude5" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;">
+          </div>
         </div>
       </div>
     </section>
@@ -534,9 +550,7 @@
           </div>
         </div>
         <div class="cs-placeholder reveal">
-          <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #2A3A4A 0%, #1A2A3A 100%);"></div>
-          <div style="position: absolute; left: var(--gap-lg); right: var(--gap-lg); top: 40%; height: 1px; background: rgba(255,255,255,0.1);"></div>
-          <span style="position: absolute; bottom: var(--gap-lg); left: var(--gap-lg); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.25);">Magnitude5</span>
+          <img src="/images/magnitude5-client-dani.jpg" alt="Dani Ferreira pushing a weighted sled at Gold's Gym" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 50%; display: block;">
         </div>
       </div>
     </section>
@@ -544,18 +558,18 @@
     <!-- ─── DIRECTION ─── -->
     <section class="cs-section" style="background: var(--white);">
       <div class="container">
-        <div class="reveal">
-          <p class="section-label">Direction</p>
-          <h2 class="cs-headline">One platform. Both sides of the brand, together.</h2>
-          <div class="cs-body" style="max-width: 640px;">
-            <p>We built from scratch on Shopify with a clear goal: create a platform where Dani's personal brand and the Magnitude5 business identity could strengthen each other rather than compete. The visual direction was refined so the site felt cohesive, elevated, and aligned with what the brand actually stands for. Strength, movement, confidence, healing, support, and long-term personal growth.</p>
-            <p>That tone needed to come through in every section, not just in the palette. Structure, hierarchy, and content flow were all shaped so the site could introduce Dani, present the philosophy, show the offers, and build trust inside one connected experience rather than across disconnected pages.</p>
+        <div class="cs-client-grid reveal">
+          <div class="cs-client-text">
+            <p class="section-label">Direction</p>
+            <h2 class="cs-headline">One platform. Both sides of the brand, together.</h2>
+            <div class="cs-body">
+              <p>We built from scratch on Shopify with a clear goal: create a platform where Dani's personal brand and the Magnitude5 business identity could strengthen each other rather than compete. The visual direction was refined so the site felt cohesive, elevated, and aligned with what the brand actually stands for. Strength, movement, confidence, healing, support, and long-term personal growth.</p>
+              <p>That tone needed to come through in every section, not just in the palette. Structure, hierarchy, and content flow were all shaped so the site could introduce Dani, present the philosophy, show the offers, and build trust inside one connected experience rather than across disconnected pages.</p>
+            </div>
           </div>
-        </div>
-        <div class="cs-placeholder reveal">
-          <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #9AAA8A 0%, #5A7A5A 100%);"></div>
-          <div style="position: absolute; left: var(--gap-lg); right: var(--gap-lg); top: 40%; height: 1px; background: rgba(255,255,255,0.1);"></div>
-          <span style="position: absolute; bottom: var(--gap-lg); left: var(--gap-lg); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.25);">Magnitude5</span>
+          <div class="cs-client-visual" style="background: #EDE8DF;">
+            <img src="/images/magnitude5-direction.jpg" alt="Magnitude5 website shown in a screen mockup" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block;">
+          </div>
         </div>
       </div>
     </section>
@@ -583,21 +597,13 @@
               <p>The Shopify platform supports both service-based and product-based revenue through one connected experience. Coaching and training alongside digital products and educational resources, all accessible through the same structure. Someone arriving from social or search has a clear path from discovery to action rather than a collection of disconnected links to chase.</p>
             </div>
           </div>
-          <div class="cs-work-visual reveal" style="padding: 0;">
-            <div style="position: absolute; inset: 0; background: linear-gradient(150deg, #2D4A3A 0%, #1A2A3A 100%);"></div>
-            <div style="position: absolute; left: var(--gap-lg); right: var(--gap-lg); top: 38%; height: 1px; background: rgba(255,255,255,0.1);"></div>
-            <span style="position: absolute; bottom: var(--gap-lg); left: var(--gap-lg); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.2);">Magnitude5</span>
+          <div class="cs-work-visual reveal" style="padding: 0; aspect-ratio: unset; background: none;">
+            <img src="/images/magnitude5-web-desktop-mobile.jpg" alt="Magnitude5 website shown on desktop and mobile side by side" style="width: 100%; height: auto; display: block; border-radius: 8px;">
           </div>
         </div>
         <div class="cs-mockup-row reveal">
-          <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; position: relative; overflow: hidden;">
-            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #3A5A4A 0%, #1A2A2A 100%);"></div>
-            <span style="position: absolute; bottom: var(--gap-sm); left: var(--gap-sm); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.2);">Magnitude5</span>
-          </div>
-          <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; position: relative; overflow: hidden;">
-            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #2A3A4A 0%, #1A2030 100%);"></div>
-            <span style="position: absolute; bottom: var(--gap-sm); left: var(--gap-sm); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.2);">Magnitude5</span>
-          </div>
+          <img src="/images/magnitude5-web-laptop.jpg" alt="Magnitude5 website homepage shown on a MacBook" style="width: 100%; height: auto; display: block; border-radius: 8px;">
+          <img src="/images/magnitude5-web-multiscreen.jpg" alt="Magnitude5 website shown across multiple screen sizes" style="width: 100%; height: auto; display: block; border-radius: 8px;">
         </div>
       </div>
     </section>
@@ -614,10 +620,8 @@
               <p>The visual foundation made Magnitude5 feel like a brand with direction rather than a basic page with services listed on it. For a founder-led brand built around coaching and transformation, how the site feels in the first few seconds shapes whether someone trusts what comes next. That first impression had to be right.</p>
             </div>
           </div>
-          <div class="cs-work-visual reveal" style="padding: 0;">
-            <div style="position: absolute; inset: 0; background: linear-gradient(150deg, #4A5A4A 0%, #2A3A2A 100%);"></div>
-            <div style="position: absolute; left: var(--gap-lg); right: var(--gap-lg); top: 38%; height: 1px; background: rgba(255,255,255,0.1);"></div>
-            <span style="position: absolute; bottom: var(--gap-lg); left: var(--gap-lg); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.2);">Magnitude5</span>
+          <div class="cs-work-visual reveal" style="padding: 0; background: #EDE8DF; aspect-ratio: 1/1;">
+            <img src="/images/magnitude5-brand-direction.jpg" alt="Magnitude5 website shown in a tablet mockup with brand direction" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
           </div>
         </div>
       </div>
@@ -635,9 +639,7 @@
           </div>
         </div>
         <div class="cs-placeholder reveal">
-          <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #2D4A3A 0%, #1A2A2A 100%);"></div>
-          <div style="position: absolute; left: var(--gap-lg); right: var(--gap-lg); top: 40%; height: 1px; background: rgba(255,255,255,0.1);"></div>
-          <span style="position: absolute; bottom: var(--gap-lg); left: var(--gap-lg); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.25);">Magnitude5</span>
+          <img src="/images/magnitude5-outcome.jpg" alt="Dani Ferreira mid-lunge at an outdoor gym" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block;">
         </div>
         <div class="cs-outcomes">
           <div class="cs-outcome reveal">
