@@ -1,21 +1,21 @@
-# StudioNorth Creative Studio — Strategic Website Blueprint
+# Valeur Studio — Strategic Website Blueprint
 
 ---
 
 ## 1. Brand Positioning Direction
 
-### What StudioNorth Should Feel Like
+### What Valeur Studio Should Feel Like
 
-StudioNorth should feel like the quiet, confident studio that serious founders discover when they're ready to stop patching their brand together and start building something cohesive. It should feel selective — not exclusive in a gatekeeping way, but intentional in an "every project gets real attention" way. The experience should communicate: *we don't do volume, we do transformation*.
+Valeur Studio should feel like the quiet, confident studio that serious founders discover when they're ready to stop patching their brand together and start building something cohesive. It should feel selective — not exclusive in a gatekeeping way, but intentional in an "every project gets real attention" way. The experience should communicate: *we don't do volume, we do transformation*.
 
 ### Market Position
 
-StudioNorth sits in the space between DIY brand tools (Canva, Squarespace templates) and large creative agencies ($50K+ retainers). It's the boutique middle — high craft, direct access to the creative lead, strategic thinking baked into every deliverable. The positioning should signal "studio" not "freelancer" and "partner" not "vendor."
+Valeur Studio sits in the space between DIY brand tools (Canva, Squarespace templates) and large creative agencies ($50K+ retainers). It's the boutique middle — high craft, direct access to the creative lead, strategic thinking baked into every deliverable. The positioning should signal "studio" not "freelancer" and "partner" not "vendor."
 
 ### Three Positioning Angles
 
 **Angle A — The Cohesion Studio**
-"We make brands that finally look like one brand." Focused on the pain point of visual inconsistency — the business whose website, packaging, social, and storefront all feel like different companies. StudioNorth is the studio that brings it all into alignment.
+"We make brands that finally look like one brand." Focused on the pain point of visual inconsistency — the business whose website, packaging, social, and storefront all feel like different companies. Valeur Studio is the studio that brings it all into alignment.
 
 **Angle B — The Quiet Rebrand**
 "For brands ready to grow up without starting over." Positioned around evolution rather than revolution — helping businesses refine and elevate what they already have into something more polished and strategic, without torching everything.
@@ -28,7 +28,7 @@ StudioNorth sits in the space between DIY brand tools (Canva, Squarespace templa
 This is the strongest angle because:
 
 1. **It names a specific pain.** Most SMBs know their brand feels "off" but can't articulate why. "Cohesion" gives them the word for their problem.
-2. **It differentiates from freelancers.** Freelancers deliver assets. StudioNorth delivers alignment.
+2. **It differentiates from freelancers.** Freelancers deliver assets. Valeur Studio delivers alignment.
 3. **It scales.** Cohesion applies whether you need a website, a brand refresh, or sourced products — it's the through-line that connects all three services.
 4. **It's ownable.** No one else in this tier is building their positioning around brand cohesion specifically.
 
@@ -179,7 +179,7 @@ The homepage follows this psychological sequence:
 
 **Purpose:** Orientation, brand presence, primary CTA access
 **Structure:**
-- Left: StudioNorth wordmark (text-based logo)
+- Left: Valeur Studio wordmark (text-based logo)
 - Center or right: Home | Work | Services | About | Insights
 - Far right: "Start a Project" button (filled, blue)
 **Visual treatment:** Transparent on scroll-top, subtle beige background on scroll. Sticky. Clean, minimal.
@@ -189,7 +189,7 @@ The homepage follows this psychological sequence:
 
 ### Section 2 — Hero
 
-**Purpose:** Immediate clarity on what StudioNorth does, who it's for, and why it matters
+**Purpose:** Immediate clarity on what Valeur Studio does, who it's for, and why it matters
 **Headline direction:** Large serif, editorial. Something like:
 > "Brands built to look like one brand."
 
@@ -260,7 +260,7 @@ or
 
 ### Section 6 — Services Overview
 
-**Purpose:** Clarify what StudioNorth actually offers
+**Purpose:** Clarify what Valeur Studio actually offers
 **Headline direction:** "What we build."
 **Content structure:**
 - 3 service pillars in a row or stacked:
@@ -353,10 +353,10 @@ or
 
 **Purpose:** Navigation, contact info, legal
 **Content structure:**
-- Left: StudioNorth wordmark + one-line descriptor
+- Left: Valeur Studio wordmark + one-line descriptor
 - Center: Quick links (Home, Work, Services, About, Insights, Contact)
 - Right: Email address, social links (Instagram, LinkedIn)
-- Bottom row: © 2026 StudioNorth Creative Studio | Privacy Policy
+- Bottom row: © 2026 Valeur Studio | Privacy Policy
 
 **Visual treatment:** Deep blue background, light text. Minimal. Structured grid.
 **Spacing:** 80px top, 40px bottom.
@@ -476,11 +476,11 @@ or
 
 ### Restraint as the Default
 
-The most noticeable trend in 2026 premium web design is the absence of decoration. No gradient meshes, no glassmorphism, no neon accents. The best sites feel like they were designed by removing elements until only the essential remained. StudioNorth should follow this principle — if a section doesn't need an image, don't add one. If a button works without an icon, leave it.
+The most noticeable trend in 2026 premium web design is the absence of decoration. No gradient meshes, no glassmorphism, no neon accents. The best sites feel like they were designed by removing elements until only the essential remained. Valeur Studio should follow this principle — if a section doesn't need an image, don't add one. If a button works without an icon, leave it.
 
 ### Typography as Architecture
 
-In 2026, headlines aren't just big — they're structural. They define the layout, create rhythm, and act as visual anchors. StudioNorth should use its serif headlines at scale (64-80px) as compositional elements, not just text. Let the typography create the visual interest that decoration used to.
+In 2026, headlines aren't just big — they're structural. They define the layout, create rhythm, and act as visual anchors. Valeur Studio should use its serif headlines at scale (64-80px) as compositional elements, not just text. Let the typography create the visual interest that decoration used to.
 
 ### Motion with Purpose
 
@@ -488,7 +488,7 @@ Modern motion is invisible until you notice it. Elements enter with gentle fades
 
 ### Responsive as Native
 
-2026 sites don't "adapt" to mobile — they feel like they were designed for mobile first and then expanded. StudioNorth should feel equally premium on a phone as on a 32" display. This means: no elements that only work at desktop scale, no tiny text that was clearly designed for big screens, no layouts that "stack" awkwardly.
+2026 sites don't "adapt" to mobile — they feel like they were designed for mobile first and then expanded. Valeur Studio should feel equally premium on a phone as on a 32" display. This means: no elements that only work at desktop scale, no tiny text that was clearly designed for big screens, no layouts that "stack" awkwardly.
 
 ### Modular Sections
 
@@ -507,7 +507,7 @@ Things that immediately make a site feel like a template:
 - Hamburger menu on desktop
 - "Our Team" section with circular headshots
 
-StudioNorth should avoid all of these. Instead: asymmetric layouts, variable card sizes, editorial text blocks, text-based navigation, founder story (not headshot grid).
+Valeur Studio should avoid all of these. Instead: asymmetric layouts, variable card sizes, editorial text blocks, text-based navigation, founder story (not headshot grid).
 
 ### Human, Crafted Feel
 
@@ -527,7 +527,7 @@ StudioNorth should avoid all of these. Instead: asymmetric layouts, variable car
 **CTA 2:** View Our Work
 
 ### Intro / Brand Positioning
-"Most businesses don't have a brand problem — they have a cohesion problem. The logo says one thing, the website says another, and the packaging says something else entirely. StudioNorth exists to fix that. We design brands that speak with one voice across every touchpoint, so your business finally looks like one business."
+"Most businesses don't have a brand problem — they have a cohesion problem. The logo says one thing, the website says another, and the packaging says something else entirely. Valeur Studio exists to fix that. We design brands that speak with one voice across every touchpoint, so your business finally looks like one business."
 
 ### Services Overview
 **Brand Identity**
@@ -550,13 +550,13 @@ StudioNorth should avoid all of these. Instead: asymmetric layouts, variable car
 4. **Launch** — "We deliver, train, and set you up to grow with confidence."
 
 ### Testimonials (Placeholder)
-> "StudioNorth took our brand from looking like five different businesses to looking like the one we actually are. The cohesion across our website, packaging, and social presence is something we couldn't have achieved on our own."
+> "Valeur Studio took our brand from looking like five different businesses to looking like the one we actually are. The cohesion across our website, packaging, and social presence is something we couldn't have achieved on our own."
 > — *[Client Name], Founder of [Business]*
 
-> "Working with StudioNorth felt like hiring a creative partner, not just a designer. They understood our vision before we could fully articulate it and delivered something that exceeded what we imagined."
+> "Working with Valeur Studio felt like hiring a creative partner, not just a designer. They understood our vision before we could fully articulate it and delivered something that exceeded what we imagined."
 > — *[Client Name], [Title]*
 
-> "We'd been patching things together for years — a freelancer here, a template there. StudioNorth was the first studio that looked at everything holistically and built something that actually made sense together."
+> "We'd been patching things together for years — a freelancer here, a template there. Valeur Studio was the first studio that looked at everything holistically and built something that actually made sense together."
 > — *[Client Name], [Title]*
 
 ### FAQ
@@ -586,11 +586,11 @@ StudioNorth should avoid all of these. Instead: asymmetric layouts, variable car
 
 ### Recommended Packaging
 
-Rather than presenting three disconnected services, StudioNorth should package them as **one transformation framework** with modular entry points. The narrative: "We build cohesive brands" — and here are the ways we do it.
+Rather than presenting three disconnected services, Valeur Studio should package them as **one transformation framework** with modular entry points. The narrative: "We build cohesive brands" — and here are the ways we do it.
 
 ### The Flagship Offer: Brand Cohesion Package
 
-A full-service engagement that combines branding + web design + optional product sourcing into a single transformation. This is the premium offer. It positions StudioNorth as a studio, not a menu of freelance services. Pricing should reflect the strategic, holistic nature of the engagement.
+A full-service engagement that combines branding + web design + optional product sourcing into a single transformation. This is the premium offer. It positions Valeur Studio as a studio, not a menu of freelance services. Pricing should reflect the strategic, holistic nature of the engagement.
 
 ### Three Service Pillars
 
@@ -641,7 +641,7 @@ Avoid jargon. Don't say "brand identity system" — say "your logo, colors, and 
 
 ### Current Assessment
 
-Without seeing the current logo, based on the business description ("StudioNorth Creative Studio"), the risk is that the current mark:
+Without seeing the current logo, based on the business description ("Valeur Studio"), the risk is that the current mark:
 - Uses a trendy display font that will age quickly
 - Includes "Creative Studio" as a subtitle in a way that feels redundant
 - May be too decorative or too generic for the minimal, premium direction
@@ -652,11 +652,11 @@ Without seeing the current logo, based on the business description ("StudioNorth
 - The wordmark should use a refined, medium-weight sans-serif with slightly tightened tracking
 - Think: Neue Montreal, Aeonik, or similar geometric-humanist hybrids
 - Weight: medium (500) — not light (looks fragile), not bold (looks heavy-handed)
-- Case: "STUDIONORTH" in all-caps with generous letter-spacing, or "StudioNorth" in title case with tight kerning
+- Case: "VALEURSTUDIO" in all-caps with generous letter-spacing, or "Valeur Studio" in title case with tight kerning
 
 **"Creative Studio" secondary line:**
 - Consider dropping "Creative" — it's implied and adds no differentiation
-- "StudioNorth Studio" is redundant, so if keeping a subtitle: "StudioNorth — Design & Brand Studio" or simply "StudioNorth" standalone
+- "Valeur Studio Studio" is redundant, so if keeping a subtitle: "Valeur Studio — Design & Brand Studio" or simply "Valeur Studio" standalone
 - If a descriptor is needed, use it as a separate lockup element, not attached to the wordmark
 
 **Lockup logic:**
@@ -764,9 +764,9 @@ Without seeing the current logo, based on the business description ("StudioNorth
 
 ### How Close to Stay to the Reference
 
-**Structurally: 80% aligned.** The Chloe Leonard site has excellent conversion architecture — the section sequence (hero → intro → portfolio → testimonials → services → process → FAQ → CTA) is proven and effective. StudioNorth should preserve this flow almost exactly.
+**Structurally: 80% aligned.** The Chloe Leonard site has excellent conversion architecture — the section sequence (hero → intro → portfolio → testimonials → services → process → FAQ → CTA) is proven and effective. Valeur Studio should preserve this flow almost exactly.
 
-**Visually: 20% aligned.** The reference site has a warm, feminine, editorial aesthetic that works for its audience. StudioNorth needs to feel more architectural, more minimal, more "design studio" than "creative boutique." The visual language should be its own.
+**Visually: 20% aligned.** The reference site has a warm, feminine, editorial aesthetic that works for its audience. Valeur Studio needs to feel more architectural, more minimal, more "design studio" than "creative boutique." The visual language should be its own.
 
 ### What to Preserve from the Reference
 
@@ -777,7 +777,7 @@ Without seeing the current logo, based on the business description ("StudioNorth
 5. **Final CTA isolation** — dedicated section with nothing competing for attention
 6. **Section pacing** — alternating between dense and spacious sections
 
-### What to Change for StudioNorth
+### What to Change for Valeur Studio
 
 1. **Color palette** — move from the reference's warm neutrals to the beige/blue system defined here
 2. **Typography** — more architectural serif headlines vs. the reference's softer editorial style
@@ -787,7 +787,7 @@ Without seeing the current logo, based on the business description ("StudioNorth
 6. **Services presentation** — pillar-based structure vs. the reference's service-by-service listing
 7. **Portfolio grid** — larger images, fewer projects visible, more editorial layout vs. the reference's carousel
 
-### What Would Make StudioNorth More Modern and Distinctive
+### What Would Make Valeur Studio More Modern and Distinctive
 
 1. **Oversized serif typography as a hero element** — the headline IS the design, not a heading above a design
 2. **Beige-dominant color scheme** — unusual for a design studio, which is exactly why it works
@@ -799,4 +799,4 @@ Without seeing the current logo, based on the business description ("StudioNorth
 
 ---
 
-*This blueprint is a living document. It establishes the strategic and creative foundation for StudioNorth's website. All sections, copy, and design decisions are designed to be iterated upon as real content, photography, and client feedback become available.*
+*This blueprint is a living document. It establishes the strategic and creative foundation for Valeur Studio's website. All sections, copy, and design decisions are designed to be iterated upon as real content, photography, and client feedback become available.*

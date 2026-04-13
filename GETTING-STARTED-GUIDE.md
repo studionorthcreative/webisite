@@ -1,4 +1,4 @@
-# StudioNorth — How to Work With Claude Code
+# Valeur Studio — How to Work With Claude Code
 
 ---
 
@@ -9,7 +9,7 @@ When you open Claude Code for the first time in this project, **copy and paste t
 ---
 
 ```
-I'm taking over the StudioNorth Creative Studio website project. I'm not a developer — I'm the creative lead. I communicate visually and conceptually.
+I'm taking over the Valeur Studio website project. I'm not a developer — I'm the creative lead. I communicate visually and conceptually.
 
 Here's how I want to work with you:
 
@@ -21,7 +21,7 @@ Here's how I want to work with you:
 6. When I say "push" or "deploy", commit and push to git so Vercel auto-deploys.
 7. If something needs a decision from me (color, layout, copy), give me 2-3 options to pick from.
 8. Keep the site premium, minimal, and modern. No cheesy stock-photo energy. No generic startup vibes.
-9. Before starting work, read the STUDIONORTH-BLUEPRINT.md for full brand and design context.
+9. Before starting work, read the VALEUR-STUDIO-BLUEPRINT.md for full brand and design context.
 10. Before starting work, read the SEO-AND-PIXEL-STRATEGY.md for tracking context.
 
 The site is at localhost:3333 — start the server so I can preview. Walk me through what's currently built.
@@ -188,7 +188,7 @@ KazUka/
 ├── sitemap.xml         ← List of all pages for search engines
 ├── vercel.json         ← Deployment config
 ├── package.json        ← Dependencies (just Resend)
-├── STUDIONORTH-BLUEPRINT.md    ← Full brand + website strategy
+├── VALEUR-STUDIO-BLUEPRINT.md    ← Full brand + website strategy
 ├── SEO-AND-PIXEL-STRATEGY.md   ← SEO + tracking game plan
 └── .gitignore          ← Files that don't get pushed to GitHub
 ```
@@ -220,7 +220,7 @@ Every time you push to GitHub, Vercel automatically deploys. So:
 
 ## Things Still Needed (Setup Checklist)
 
-- [ ] **Vercel login** — run `! vercel login` and sign in with the StudioNorth account
+- [ ] **Vercel login** — run `! vercel login` and sign in with the Valeur Studio account
 - [ ] **Vercel env vars** — add `RESEND_API_KEY`, `TURNSTILE_SECRET_KEY`, `CONTACT_EMAIL` in Vercel dashboard
 - [ ] **Cloudflare Turnstile** — create a widget at dash.cloudflare.com, get site key + secret key
 - [ ] **Update Turnstile site key in code** — tell Claude: "update the Turnstile site key to [your key]"

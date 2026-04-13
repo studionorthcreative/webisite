@@ -1,4 +1,4 @@
-# StudioNorth — SEO & Pixel Strategy Game Plan
+# Valeur Studio — SEO & Pixel Strategy Game Plan
 
 *Written from the perspective of 20+ years in SEO, paid media tracking, and conversion architecture. No fluff, no agency upsell — just what works for a boutique studio launching with zero paid marketing budget.*
 
@@ -50,9 +50,9 @@ Everything below is already live in the codebase:
 
 ### The Reality
 
-With no budget for SEO tools, link building services, or content agencies, StudioNorth's SEO strategy needs to be surgical. Focus on three things:
+With no budget for SEO tools, link building services, or content agencies, Valeur Studio's SEO strategy needs to be surgical. Focus on three things:
 
-1. **Own your brand name** — rank #1 for "StudioNorth" and variations
+1. **Own your brand name** — rank #1 for "Valeur Studio" and variations
 2. **Win local + niche service queries** — "boutique branding studio [city]", "web design for small business"
 3. **Build topical authority over time** — through the Insights blog
 
@@ -61,9 +61,9 @@ With no budget for SEO tools, link building services, or content agencies, Studi
 #### Tier 1 — Brand (rank immediately)
 | Keyword | Target Page |
 |---------|-------------|
-| StudioNorth | Home |
-| StudioNorth Creative Studio | Home |
-| studionorth.co | Home |
+| Valeur Studio | Home |
+| Valeur Studio | Home |
+| valeurstudio.com | Home |
 
 #### Tier 2 — Service + Qualifier (rank in 3-6 months)
 | Keyword | Volume Est. | Target Page |
@@ -130,7 +130,7 @@ Every page on the site should have:
 
 ### Local SEO (If Applicable)
 
-If StudioNorth operates from a specific location:
+If Valeur Studio operates from a specific location:
 
 1. **Google Business Profile** — create immediately, even for service-area businesses
    - Category: "Graphic Designer" primary, "Web Designer" secondary
@@ -146,7 +146,7 @@ If StudioNorth operates from a specific location:
 - **Business directories:** Clutch.co, DesignRush, GoodFirms (free listings)
 - **HARO / Connectively:** Respond to journalist queries about branding/design (free backlinks from high-DA sites)
 - **Guest posting:** Write for industry blogs (branding, small business, entrepreneurship)
-- **Portfolio links:** Every client website should link back to "Designed by StudioNorth"
+- **Portfolio links:** Every client website should link back to "Designed by Valeur Studio"
 - **Social profiles:** Consistent links from Instagram, LinkedIn, X, Threads
 
 ---
@@ -166,9 +166,9 @@ Meta Pixel (formerly Facebook Pixel) is a JavaScript snippet that tracks visitor
 
 #### Step 1: Create Meta Business Suite (Free)
 1. Go to business.facebook.com
-2. Create a Business Account for StudioNorth
+2. Create a Business Account for Valeur Studio
 3. Navigate to Events Manager → Connect Data Sources → Web → Meta Pixel
-4. Name it "StudioNorth Website Pixel"
+4. Name it "Valeur Studio Website Pixel"
 5. Copy the Pixel ID (a number like `123456789012345`)
 
 #### Step 2: Install the Pixel
@@ -268,8 +268,8 @@ GTM lets you manage all tracking pixels, events, and analytics from one dashboar
 
 #### Step 1: Create GTM Account (Free)
 1. Go to tagmanager.google.com
-2. Create account "StudioNorth"
-3. Create container "studionorth.co" (Web)
+2. Create account "Valeur Studio"
+3. Create container "valeurstudio.com" (Web)
 4. Copy the Container ID (`GTM-XXXXXXX`)
 
 #### Step 2: Install GTM
@@ -355,8 +355,8 @@ window.addEventListener('scroll', function() {
 ### Setup (Free)
 
 1. Go to analytics.google.com
-2. Create property "StudioNorth"
-3. Create Web data stream for studionorth.co
+2. Create property "Valeur Studio"
+3. Create Web data stream for valeurstudio.com
 4. Copy Measurement ID (`G-XXXXXXXXXX`)
 5. Add as a tag in GTM (preferred) or direct embed
 
@@ -392,13 +392,13 @@ Once events flow in, mark these as conversions in GA4:
 ## Part 6: Additional Pixels & Tracking Worth Adding
 
 ### LinkedIn Insight Tag (Free)
-**When:** When StudioNorth targets B2B clients or professional services
+**When:** When Valeur Studio targets B2B clients or professional services
 **Why:** Tracks LinkedIn ad performance + builds retargeting audiences of professionals
 **Setup:** Create LinkedIn Campaign Manager account → Install Insight Tag via GTM
 **Priority:** Medium — add when considering LinkedIn outreach
 
 ### Pinterest Tag (Free)
-**When:** If StudioNorth creates visual portfolio content on Pinterest
+**When:** If Valeur Studio creates visual portfolio content on Pinterest
 **Why:** Pinterest is a visual search engine — branding/design content performs well
 **Setup:** Create Pinterest Business account → Install tag via GTM
 **Priority:** Low — consider in Phase 3+
@@ -408,7 +408,7 @@ Once events flow in, mark these as conversions in GA4:
 **Why:** Records real visitor sessions (heatmaps, scroll maps, session replays) so you can see exactly how people interact with the site. No cost, no limit.
 **Setup:**
 1. Go to clarity.microsoft.com
-2. Create project for studionorth.co
+2. Create project for valeurstudio.com
 3. Copy the tracking code
 4. Add as Custom HTML tag in GTM, trigger: All Pages
 **Priority:** HIGH — install day one
@@ -548,8 +548,8 @@ Thank-you page / confirmation
    - `/insights/brand-cohesion-guide` not `/blog/post-12345`
 
 6. **Title tag formula for all pages:**
-   `[Primary Keyword] — StudioNorth | [Secondary Qualifier]`
-   Example: `Brand Identity Design — StudioNorth | Boutique Branding Studio`
+   `[Primary Keyword] — Valeur Studio | [Secondary Qualifier]`
+   Example: `Brand Identity Design — Valeur Studio | Boutique Branding Studio`
 
 7. **Review meta descriptions every 90 days** — check Search Console for pages with high impressions but low CTR. Rewrite those descriptions to be more compelling.
 
@@ -575,4 +575,4 @@ From 20 years of watching businesses waste time on SEO:
 
 ---
 
-*This document is the complete SEO and tracking infrastructure for StudioNorth. Everything here is free to implement. The only cost is time and consistency.*
+*This document is the complete SEO and tracking infrastructure for Valeur Studio. Everything here is free to implement. The only cost is time and consistency.*
