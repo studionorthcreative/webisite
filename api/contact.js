@@ -42,10 +42,10 @@ export default async function handler(req, res) {
 
     // --- Build email content ---
     const serviceLabel = {
-      'brand-identity': 'Brand Identity',
-      'web-design': 'Web Design',
-      'product-sourcing': 'Product Sourcing',
-      'full-package': 'Full Brand Package',
+      'website-design': 'Website Design & Development',
+      'custom-packaging': 'Custom Packaging & Branded Goods',
+      'launch-systems': 'Launch Systems',
+      'full-execution': 'Full Execution (Web + Packaging + Launch)',
       'not-sure': 'Not Sure Yet',
     }[service] || service || 'Not specified';
 

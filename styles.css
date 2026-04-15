@@ -980,6 +980,23 @@ ul {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color var(--duration-fast) var(--ease);
+}
+
+.footer-social-link:hover {
+  color: var(--white);
+}
+
 .footer-links {
   display: flex;
   gap: clamp(40px, 6vw, 80px);
